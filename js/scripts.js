@@ -1,3 +1,4 @@
+// Create variables that will hold the names and descriptions of possible courses, which we will later reference by index //
 var courseNames = [
   "CSS/React",
   "Java/React",
@@ -10,6 +11,7 @@ var courseInfo = [
   "",
 ];
 
+// Create functions that will perform global regular expression searches on the user's survey input values and assign the number of instances of each value to a global variable//
 var countA = function(string){
   return string.match(/a/g).length;
 };
@@ -27,18 +29,22 @@ $(document).ready(function() {
   });
 
   $("#bootcamp_survey").submit(function(event) {
-    var inputs = ["website", "career", "applications", "microsoft", "education"];
+    var inputIds = ["website", "career", "applications", "microsoft", "education"];
     var frequencies = [];
     var userScore = "";
 
+// Create a loop uses inputIds items to select survey input values and concatenate them to a string representing the user's survey 'score'//
+
     inputs.forEach(function(input) {
-      userScore += $("#" + input).val();
+      userScore += $("#" + inputIds).val();
       console.log(userScore);
     });
 
+// Call global counter functions to generate frequencies of each response value type and add those values to an array //
     frequencies.push(countA(userScore), countB(userScore), countC(userScore));
     console.log(frequencies);
 
+// Create conditional output logic based on the most likely response value conditions, relying on the global variables used to store names and descriptions. // 
     if (frequencies[0] >= 3) {
       $("#course_name").text(courseNames[0]);
       $("#course_info").text(courseInfo[0]);
