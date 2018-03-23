@@ -42,17 +42,25 @@ $(document).ready(function() {
     if (frequencies[0] >= 3) {
       $("#course_name").text(courseNames[0]);
       $("#course_info").text(courseInfo[0]);
+
       $("#output").slideToggle("slow");
     } else if (frequencies[1] >= 3) {
       $("#course_name").text(courseNames[1]);
       $("#course_info").text(courseInfo[1]);
+
       $("#output").slideToggle("slow");
     } else if (frequencies[2] >= 3) {
       $("#course_name").text(courseNames[2]);
       $("#course_info").text(courseInfo[2]);
+
       $("#output").slideToggle("slow");
     } else {
-      if (frequencies[0] === frequencies[1]) {
+      $("#course_name").text("We're not sure!")
+      $("#course_info").text("Sounds like you've got eclectic tastes. We'd encourage you to reach out to a bootcamp representative, connect with folks in the industry and do some more research to find out what might be the best path for you.");
+
+      $("#output").slideToggle("slow");
+
+      if (frequencies[0] === 2 && frequencies[1] === 2) {
         $("#course_name").text(courseNames[0]);
         $("#course_info").text(courseInfo[0]);
         $("#course_name2").text(courseNames[1]);
@@ -60,7 +68,7 @@ $(document).ready(function() {
 
         $("#output").slideToggle("slow");
         $("#output2").slideToggle("slow");
-      } else {
+      } else if (frequencies[1] === 2 && frequencies[2] === 2){
         $("#course_name").text(courseNames[1]);
         $("#course_info").text(courseInfo[1]);
         $("#course_name2").text(courseNames[2]);
@@ -68,9 +76,13 @@ $(document).ready(function() {
 
         $("#output").slideToggle("slow");
         $("#output2").slideToggle("slow");
+      } else {
+        $("#course_name").text("We're not sure!")
+        $("#course_info").text("Sounds like you've got eclectic tastes. We'd encourage you to reach out to a bootcamp representative, connect with folks in the industry and do some more research to find out what might be the best path for you.");
+
+        $("#output").slideToggle("slow");
       }
     }
-
 
     event.preventDefault();
   });
