@@ -1,4 +1,3 @@
-// Create variables that will hold the names and descriptions of possible courses, which we will later reference by index //
 var courseNames = [
   "CSS/React",
   "Java/React",
@@ -8,10 +7,10 @@ var courseNames = [
 var courseInfo = [
   "",
   "",
-  "",
+  ""
 ];
 
-// Create functions that will perform global regular expression searches on the user's survey input values and assign the number of instances of each value to a global variable//
+
 var countA = function(string){
   return string.match(/a/g).length;
 };
@@ -29,39 +28,38 @@ $(document).ready(function() {
   });
 
   $("#bootcamp_survey").submit(function(event) {
-    var inputIds = ["website", "career", "applications", "microsoft", "education"];
+    var inputs = ["website", "career", "applications", "microsoft", "education"];
     var frequencies = [];
-    var userScore = "";
+    var userScore = "abc";
 
-// Create a loop uses inputIds items to select survey input values and concatenate them to a string representing the user's survey 'score'//
+
 
     inputs.forEach(function(input) {
-      userScore += $("#" + inputIds).val();
+      userScore += $("#" + input).val();
       console.log(userScore);
     });
 
-// Call global counter functions to generate frequencies of each response value type and add those values to an array //
+
     frequencies.push(countA(userScore), countB(userScore), countC(userScore));
     console.log(frequencies);
 
-// Create conditional output logic based on the most likely response value conditions, relying on the global variables used to store names and descriptions. // 
-    if (frequencies[0] >= 3) {
+    if (frequencies[0] >= 4) {
       $("#course_name").text(courseNames[0]);
       $("#course_info").text(courseInfo[0]);
 
       $("#output").slideToggle("slow");
-    } else if (frequencies[1] >= 3) {
+    } else if (frequencies[1] >= 4) {
       $("#course_name").text(courseNames[1]);
       $("#course_info").text(courseInfo[1]);
 
       $("#output").slideToggle("slow");
-    } else if (frequencies[2] >= 3) {
+    } else if (frequencies[2] >= 4) {
       $("#course_name").text(courseNames[2]);
       $("#course_info").text(courseInfo[2]);
 
       $("#output").slideToggle("slow");
     } else {
-      if (frequencies[0] === 2 && frequencies[1] === 2) {
+      if (frequencies[0] === 3 && frequencies[1] === 3) {
         $("#course_name").text(courseNames[0]);
         $("#course_info").text(courseInfo[0]);
         $("#course_name2").text(courseNames[1]);
@@ -69,7 +67,7 @@ $(document).ready(function() {
 
         $("#output").slideToggle("slow");
         $("#output2").slideToggle("slow");
-      } else if (frequencies[1] === 2 && frequencies[2] === 2){
+      } else if (frequencies[1] === 3 && frequencies[2] === 3){
         $("#course_name").text(courseNames[1]);
         $("#course_info").text(courseInfo[1]);
         $("#course_name2").text(courseNames[2]);
@@ -78,7 +76,7 @@ $(document).ready(function() {
         $("#output").slideToggle("slow");
         $("#output2").slideToggle("slow");
       } else {
-        $("#course_name").text("We're not sure!")
+        $("#course_name").text("We're not sure!");
         $("#course_info").text("Sounds like you've got eclectic tastes. We'd encourage you to reach out to a bootcamp representative, connect with folks in the industry and do some more research to find out what might be the best path for you.");
 
         $("#output").slideToggle("slow");
