@@ -8,7 +8,7 @@
 
 _This webpage provides a cursory evaluation of a user's coding interests in order to suggest which Epicodus track might be right for him/her/them._
 
-*_Demo: pabarreyro.github.io/camp-counselor
+*_Demo: pabarreyro.github.io/camp-counselor_
 
 ## Setup/Installation Requirements
 
