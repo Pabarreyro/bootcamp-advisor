@@ -55,11 +55,6 @@ $(document).ready(function() {
 
       $("#output").slideToggle("slow");
     } else {
-      $("#course_name").text("We're not sure!")
-      $("#course_info").text("Sounds like you've got eclectic tastes. We'd encourage you to reach out to a bootcamp representative, connect with folks in the industry and do some more research to find out what might be the best path for you.");
-
-      $("#output").slideToggle("slow");
-
       if (frequencies[0] === 2 && frequencies[1] === 2) {
         $("#course_name").text(courseNames[0]);
         $("#course_info").text(courseInfo[0]);
