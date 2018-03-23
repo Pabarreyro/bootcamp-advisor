@@ -1,36 +1,36 @@
-# _Bootcamp Counselor_
+# Bootcamp Counselor
 
-#### _Bootcamp Track Suggester Form, 3/23/18_
+#### Bootcamp Track Suggester Form, 3/23/18
 
-#### By _**Pablo Barreyro**_
+#### By **Pablo Barreyro**
 
 ## Description
 
-_This webpage provides a cursory evaluation of a user's coding interests in order to suggest which Epicodus track might be right for him/her/them._
+This webpage provides a cursory evaluation of a user's coding interests in order to suggest which Epicodus track might be right for him/her/them.
 
-*_Demo: pabarreyro.github.io/camp-counselor_
+*Demo: pabarreyro.github.io/camp-counselor
 
 ## Setup/Installation Requirements
 
-* _Clone from GitHub_
-* _Edit in preferred code editor_
-* _Open index.html from command line_
+* Clone from GitHub
+* Edit in preferred code editor
+* Open index.html from command line
 
-_No other libraries needed._
+No other libraries needed.
 
 ## Known Bugs
 
-_No known bugs on current version._
+No known bugs on current version.
 
 ## Support and contact details
 
-_email pabarreyro[at]gmail.com_
+email pabarreyro[at]gmail.com
 
 ## Technologies Used
 
-*_HTML_
-*_CSS & Bootstrap_
-*_jQuery & JavaScript_
+*HTML
+*CSS & Bootstrap
+*jQuery & JavaScript
 
 ### License
 
