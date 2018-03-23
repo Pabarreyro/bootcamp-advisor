@@ -7,7 +7,7 @@ body {
   padding: 5px;
 }
 
-.heading, h3, p {
+.heading, h3, h4, p {
   text-align: center;
 }
 
@@ -39,13 +39,14 @@ span {
   display: none;
 }
 
-button {
+#submit {
   display: block;
   background-color: #D9230F;
   color: #fff;
 }
 
 .jumbotron {
+  text-align: center;
   margin-top: 10px;
   background-color: #f5f5f5;
   border: 1px solid #ccc;
@@ -57,4 +58,13 @@ button {
 
 #course_name, #course_name2  {
   color: #3A56A2;
+}
+
+#course_link, #course_link2 {
+  background-color: #029ACF;
+  color: #fff;
+}
+
+#output_conjunction {
+  margin: 10px;
 }
