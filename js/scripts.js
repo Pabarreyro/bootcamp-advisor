@@ -31,7 +31,7 @@ var countC = function(string){
 $(document).ready(function() {
   $("#instructions_btn").click(function() {
     $("#instructions").slideToggle("slow");
-    console.log("test");
+
   });
 
   $("#bootcamp_survey").submit(function(event) {
@@ -44,12 +44,12 @@ $(document).ready(function() {
     // Looping function: selects ids and concatenates values to userScore strong//
     inputs.forEach(function(input) {
       userScore += $("#" + input).val();
-      console.log(userScore);
+
     });
 
     // Branching logic: pass userScore into counter functions and assign return values to array, then use values to specify conditional outputs //
     frequencies.push(countA(userScore), countB(userScore), countC(userScore));
-    console.log(frequencies);
+    
 
     if (frequencies[0] >= 4) {
       $("#course_name").text(courseNames[0]);
