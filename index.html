@@ -15,60 +15,67 @@
     <div class="container">
       <div class="row heading">
         <h1>Bootcamp Advisor</h1>
-        <h6><span>Disclaimer:</span> This page is an informational resource, but does purport to provide professional advice or services.</h6>
       </div>
-      <div class="row" id="instructions">
-        <h3>Instructions</h3>
-        <p>Select the answers that MOST reflect your interests and goals. <span>Do not</span> leave questions unanswered!</p>
+      <div class="row">
+        <h3 id="instructions_btn">Instructions</h3>
+        <p id="instructions">Select the answers that MOST reflect your interests and goals. <span>Do not</span> leave questions unanswered!</p>
       </div>
       <div class="row">
         <form id="bootcamp_survey">
           <div class="form-group">
             <label for="website">When I think of sites or software that have left an impression, I'm usually thinking about:</label>
-            <select class="form-control" id="website">
-              <option value="a">Its design, layout and overall user experience</option>
+            <select class="form-control" id="website" required>
+              <option value="" disabled selected hidden>Please Choose...</option>
+              <option value="a">Their design, layout and overall user experience</option>
               <option value="b">How everything works and what is going on in the background</option>
               <option value="c">All of the above</option>
             </select>
           </div>
           <div class="form-group">
             <label for="career">When I think about the kind of employers I'd like to have in my career, they tend to be:</label>
-            <select class="form-control" id="career">
+            <select class="form-control" id="career" required>
+              <option value="" disabled selected hidden>Please Choose...</option>
               <option value="a">Small startups, digital agencies, marketing firms</option>
-              <option value="b">Large enterprise(<em>e.g.,</em> Nike, Thetus)</option>
+              <option value="b">Large enterprises (e.g., Nike, Thetus)</option>
               <option value="c">Government or major public consultancies</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="applications">What kind of things would you like to build?</label>
-            <select class="form-control" id="applications">
-              <option value="a">I am only interested in web/mobile development</option>
-              <option value="b">I am interested in web/mobile and enterprise software development</option>
-              <option value="c">I am interested in web/mobile and game development</option>
+            <label for="applications">I'm mostly interested in builing:</label>
+            <select class="form-control" id="applications" required>
+              <option value="" disabled selected hidden>Please Choose...</option>
+              <option value="a">Websites and mobile apps only</option>
+              <option value="b">Web/mobile and maybe business enterprise software</option>
+              <option value="c">Web/mobile and maybe video/VR games</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="microsoft">How comfortable are you with Microsoft's Visual Basic and Windows products?</label>
-            <select class="form-control" id="microsoft">
+            <label for="microsoft">When it comes to Microsoft's Visual Basic and Windows products:</label>
+            <select class="form-control" id="microsoft" required>
+              <option value="" disabled selected hidden>Please Choose...</option>
               <option value="a">I don't know or don't care for them.</option>
-              <option value="b">I'm familiar with them but hold no strong opinions.</option>
+              <option value="b">I'm familiar with them and would be open to working on them.</option>
               <option value="c">I know them very well and would love to work on them!</option>
             </select>
           </div>
           <div class="form-group">
-            <label for="programming-level">How far do you intend to take your programming education after bootcamp?</label>
-            <select class="form-control" id="programming-level">
-              <option value="a">I just want to keep up-to-date on what I've learned here.</option>
-              <option value="b">Maybe a few other web languages, but that's it.</option>
-              <option value="c">I want to learn key computer science principles and low-level programming languages.</option>
+            <label for="education">After bootcamp, I plan to expand my learning mostly by:</label>
+            <select class="form-control" id="education" required>
+              <option value="" disabled selected hidden>Please Choose...</option>
+              <option value="a">Keeping up-to-date on web .</option>
+              <option value="b">Picking up a few high-level languages not offered (e.g., Pythin, C++, Pascal).</option>
+              <option value="c">Digging into more complex machine coding principles and maybe even low-level programming languages.</option>
             </select>
           </div>
+          <button class="btn" type="submit">Submit</button>
         </form>
       </div>
-      <div class="row output-row">
-        <div class="jumbotron" id="output">
-
-        </div>
+      <div class="jumbotron" id="output">
+        <h3 id="course_name">Test</h3>
+      </div>
+      <div class="row footer">
+        <h6><span>Disclaimer:</span> This page is offered as an informational resource. It does not purport to provide professional advice or services, nor does it reflect the recruitment practices of Epicodus.</h6>
+      </div>
       </div>
     </div>
   </body>

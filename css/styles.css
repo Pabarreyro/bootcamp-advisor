@@ -4,8 +4,53 @@ body {
 
 .row {
   display: block;
+  padding: 5px;
 }
 
-h1, h3 {
+.heading, h3, p {
   text-align: center;
+}
+
+h1 {
+  color: #48484c;
+}
+
+h6 {
+  color: #777;
+  font-weight: lighter;
+  font-style: oblique;
+}
+
+span {
+  font-weight: bold;
+}
+
+#instructions_btn {
+  cursor: pointer;
+  color: rgb(2,154,207);
+}
+
+#instructions_btn:hover {
+  text-decoration: underline;
+  color: rgb(2,154,207);
+}
+
+#instructions {
+  display: none;
+}
+
+button {
+  display: block;
+  background-color: #D9230F;
+  color: #fff;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+}
+
+#course_name {
+  color: #3A56A2;
 }

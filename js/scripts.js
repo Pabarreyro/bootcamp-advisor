@@ -1,24 +1,28 @@
 var countA = function(string){
-  return string.count("a");
+  return string.match(/a/g).length;
 };
 var countB = function(string){
-  return string.count("b");
+  return string.match(/b/g).length
 };
 var countC = function(string){
-  return string.count("c");
+  return string.match(/c/g).length
 };
 
 $(document).ready(function() {
-  debugger;
+  $("#instructions_btn").click(function() {
+    $("#instructions").slideToggle("slow");
+    console.log("test");
+  });
+
   $("#bootcamp_survey").submit(function(event) {
-    var inputs = ["q1", "q2", "q3", "q4", "q5"];
     var userScore = "";
 
     inputs.forEach(function(input) {
       userScore += $("#" + input).val();
+      console.log(userScore);
     });
 
-    $("#story").show();
+    $("#output").slideToggle("slow");
 
     event.preventDefault();
   });
