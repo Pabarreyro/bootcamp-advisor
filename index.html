@@ -2,9 +2,74 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Bootcamp Advisor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" >
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
   </head>
   <body>
+    <div class="container">
+      <div class="row heading">
+        <h1>Bootcamp Advisor</h1>
+        <h6><span>Disclaimer:</span> This page is an informational resource, but does purport to provide professional advice or services.</h6>
+      </div>
+      <div class="row" id="instructions">
+        <h3>Instructions</h3>
+        <p>Select the answers that MOST reflect your interests and goals. <span>Do not</span> leave questions unanswered!</p>
+      </div>
+      <div class="row">
+        <form id="bootcamp_survey">
+          <div class="form-group">
+            <label for="[object Object]"></label>
+            <select class="form-control" id="q1">
+              <option value="a"></option>
+              <option value="b"></option>
+              <option value="c"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="[object Object]"></label>
+            <select class="form-control" id="q2">
+              <option value="a"></option>
+              <option value="b"></option>
+              <option value="c"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="[object Object]"></label>
+            <select class="form-control" id="q3">
+              <option value="a"></option>
+              <option value="b"></option>
+              <option value="c"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="[object Object]"></label>
+            <select class="form-control" id="q4">
+              <option value="a"></option>
+              <option value="b"></option>
+              <option value="c"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="[object Object]"></label>
+            <select class="form-control" id="q5">
+              <option value="a"></option>
+              <option value="b"></option>
+              <option value="c"></option>
+            </select>
+          </div>
+        </form>
+      </div>
+      <div class="row output-row">
+        <div class="jumbotron" id="output">
 
+        </div>
+      </div>
+    </div>
   </body>
 </html>
