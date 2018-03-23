@@ -9,6 +9,7 @@ var countC = function(string){
 };
 
 $(document).ready(function() {
+  debugger;
   $("#bootcampSurvey").submit(function(event) {
     var inputs = ["q1", "q2", "q3", "q4", "q5"];
     var userScore = "";
