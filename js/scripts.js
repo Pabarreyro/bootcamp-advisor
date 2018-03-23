@@ -1,3 +1,15 @@
+var courseNames = [
+  "CSS/React",
+  "Java/React",
+  "C#/.Net"
+];
+
+var courseInfo = [
+  "",
+  "",
+  "",
+];
+
 var countA = function(string){
   return string.match(/a/g).length;
 };
